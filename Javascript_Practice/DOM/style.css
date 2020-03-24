@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("silver-and-black-laptop-computer-1229861.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    font-family: sans-serif;
+}
+.header{
+	text-align: center;
+	background-color: rgb(0,100,0);
+}
+.header ul{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+.header ul li{
+	width: 120px;
+	padding: 15px;
+	margin: 15px;
+}
+.header ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+.active,.header ul li:hover{
+	background: #2bab0d;
+	border-radius: 3px;
+}
+.header .fas{
+	margin-right: 8px;
+}
+.header_1{
+	display: none;
+}
+.header ul li:hover .header_1{
+	display:block;
+	position: absolute;
+	background: rgb(0,100,0);
+	
+}
+.header ul li:hover .header_1  ul{
+	display: block;
+	margin-left: 10px;
+}
+.header ul li:hover .header_1  ul li{
+	width: 150px;
+	padding-top: 10px;
+	border-bottom: 1px dotted #fff;
+	border-radius: 0;
+	text-align: left;
+}
+.header ul li:hover .header_1  ul li:last-child{
+	border-bottom: none;
+}
+.header ul li:hover .header_1  ul li a:hover{
+	color: #b31111;
+}
