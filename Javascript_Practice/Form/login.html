@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- code by webdevtrick (webdevtrick.com) -->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form | webdevtrick.com</title>
+  
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+      <link rel="stylesheet" href="style.css">
+ 
+  
+</head>
+ 
+<body>
+ 
+  <div class="row">
+  <section class="section">
+    <header>
+      <h3>Register</h3>
+      <h4>Please fill your information in this form</h4>
+    </header>
+    <main>
+      <form>
+       
+        <div class="form-item box-item">
+          <input type="email" name="email" class="tx1" placeholder="Email" data-email data-required>
+          <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+          <small class="errorEmail"><i class="fa fa-asterisk" aria-hidden="true"></i> email is not valid</small>
+        </div>
+
+        <div class="form-item box-item">
+          <input type="text" name="password" class="tx1" placeholder="Password" data-required>
+          <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+        </div>
+        
+        <div class="form-item">
+          <span id="submit" class="submit">Submit</span>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>Copyright &copy; Mahedi Hasan, 2020</p>
+    </footer>
+    <i class="wave"></i>
+  </section>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+    <script  src="function.js"></script>
+
+</body>
+ 
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+        <script>
+                 var doSomething = function(paramOne, paramTwo, fn) 
+                 {
+                    paramOne = paramOne + 3;
+                    paramOne = paramOne + 1;
+                    paramOne = paramOne * 8;
+                    
+                    return fn(paramOne, paramTwo);
+                };
+
+                function sum(paramOne, paramTwo)
+                {
+                    return paramOne + paramTwo;
+                }
+
+
+
+            
+                var foo = doSomething(3, 5, sum); 
+
+                
+                var bar = doSomething(2, 2, function(paramOne, paramTwo) 
+                {
+                    return paramOne * paramTwo;    
+                }); 
+
+                document.write(foo +'<br>');
+                document.write(bar);
+        </script>        
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Navbar</title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar{
+            display: block;
+            position:absolute;
+             width: 100%;
+            background-color:blueviolet;
+        }
+         li{ 
+            display:inline-block;
+            
+            background-color: blueviolet;
+            color: white;
+            float:right;
+            text-align: center;
+            margin: 0 ;
+       
+        }
+        li a{
+              
+            display:inline-block;
+            padding: 15px 50px;
+            color: white;
+            
+            text-decoration: none;
+        }
+        
+           
+        a:hover{
+
+            background-color:#000;
+        }
+        
+       
+
+        
+        
+
+
+    </style>
+
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a id="home" onclick="home()" href="#home">Home</a></li>
+                <li><a id="login" onclick="login()" href="#login">Login</a></li>
+                <li><a id="profile" onclick="profile()" href="#Profile">Profile</a></li>
+                <li><a id="contact" onclick="contact()" href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <script>
+            function home(){
+                document.getElementById("home").style.backgroundColor="green";
+                document.getElementById("login").style.backgroundColor="";
+                document.getElementById("profile").style.backgroundColor="";
+                document.getElementById("contact").style.backgroundColor="";
+            }
+
+            function login(){
+                document.getElementById("home").style.backgroundColor="";
+                document.getElementById("login").style.backgroundColor="teal";
+                document.getElementById("profile").style.backgroundColor="";
+                document.getElementById("contact").style.backgroundColor="";
+            }
+
+            function profile(){
+                document.getElementById("home").style.backgroundColor="";
+                document.getElementById("login").style.backgroundColor="";
+                document.getElementById("profile").style.backgroundColor="yello";
+                document.getElementById("contact").style.backgroundColor="";
+            }
+
+            function contact(){
+                document.getElementById("home").style.backgroundColor="";
+                document.getElementById("login").style.backgroundColor="";
+                document.getElementById("profile").style.backgroundColor="";
+                document.getElementById("contact").style.backgroundColor="black";
+            }
+        </script>
+       
+    </body>
+</html>
