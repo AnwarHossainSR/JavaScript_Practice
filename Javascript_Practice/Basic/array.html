@@ -1,44 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My first Javascript web site</title>
-    </head>
-    <body>
-        <label class="label1"></label>
-        <p class=""></p>
-     <script>
-         
-            var names = ["Jeremy", "Jeffrey"],
-                names2 = ["Jennifer", "Jackie"];
-                
-            var people = names.concat(names2);
+<body>
 
-            var joined = people.join(", ");
+<h2>JavaScript Array Methods</h2> 
 
-            var reversed = people.reverse();
+<h2>shift()</h2>
 
-            var sorted = people.sort();
-            document.write("Names array:");
-            document.write(names);
-            document.write("<br>");
-            document.write("Names2 array:");
-            document.write(names2);
-            document.write("<br>");
-            document.write("after concate:");
-            document.write(people);
-            document.write("<br>");
-            document.write("after join:");
-            document.write(joined);
-            document.write("<br>");
-            document.write("after reversed:");
-            document.write(reversed);
-            document.write("<br>");
-            document.write("after sort:");
-            document.write(sorted);
-    </script>
+<p>The shift() method removes the first element of an array (and "shifts" all other elements to the left):</p>
 
-  
-    </body>
-    
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.shift();
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
 </html>
-
